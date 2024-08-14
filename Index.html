@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin" />
+    <title>Pakistan Independence Day - MOHID</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <link rel="icon" type="image/x-icon" href="Assets/Favicons/icon1.png">
+
+    <!-- Existing head content -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <div id="secretDiv" class="hidden"></div>
+    
+    <!-- Header and Navigation -->
+    <!-- <header>
+        <div class="logo">
+            <h1>MOHID</h1>
+        </div> -->
+        <!-- <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#dashboard">Statistics</a></li> 
+                <li><a href="#population">Population</a></li>
+                <li><a href="#pollution">Pollution</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#beauty">Natural Beauty</a></li>
+                
+            </ul>
+        </nav> -->
+
+    <!-- </header> -->
+
+
+ <!-- Desktop Navigation Bar -->
+<nav class="desktop-nav">
+    <!-- <div class="nav-logo">
+        <img src="path_to_logo.png" alt="Logo">
+        
+    </div> -->
+    <div class="logo">
+            <h1>MOHID</h1>
+        </div> 
+    <div class="celebrate-message">
+        <p>Celebrate Independence with Us</p>
+    </div>
+    <div class="hamburger-menu" onclick="toggleSidebar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</nav>
+
+<!-- Sidebar for Mobile and Hamburger Menu -->
+<div id="sidebar" class="sidebar">
+    <div class="sidebar-content">
+        <!-- Top Portion: Navigation Links Section -->
+        <div class="nav-section">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#history">History</a>
+                <a href="#population">Population</a>
+                <a href="#pollution">Pollution</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#beauty">Natural Beauty</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- Bottom Portion: Audio Player Section -->
+        <div class="audio-section">
+            <div class="audio-toggle" onclick="toggleAudio()">
+                <span>&#x25B2;</span> <!-- Arrow icon for expanding/collapsing audio player -->
+            </div>
+            <div class="audio-player show">
+                <h3>Mili Naghme & Anthem</h3>
+                              
+                <audio controls>
+                    <source src="https://files.thenaatsharif.com/downloads/chours/pakistan-national-anthem.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                        
+                <audio controls>
+                    <source src="Assets/Audio/Song1.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+
+               
+                <audio controls>
+                    <source src="https://files.thenaatsharif.com/downloads/sahir-ali-bagga/Pakistan-Zindabad-Song-MP3-Download-By-Sahir-Ali-Bagga.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                                              <audio controls>
+                    <source src="https://files.thenaatsharif.com/downloads/sahir-ali-bagga/Pakistan-Zindabad-Song-MP3-Download-By-Sahir-Ali-Bagga.mp3">
+                    Your browser does not support the audio element.
+                </audio>             
+                 <audio controls>
+                    <source src="https://www.poemsurdu.com/wp-content/uploads/2017/07/Mere-Watan-Ye-Aqeedatain-Kids-Version-Hammad-Ali.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src=" https://files.thenaatsharif.com/downloads/junoon/hum-hain-pakistani.mp3">
+                    Your browser does not support the audio element.
+                </audio>                  
+
+
+               
+            
+                <ul class="song-list">
+                    <li><iframe src="https://www.boomplay.com/embed/137024647/MUSIC?colType=5&colID=75348902" width="100%" height="420" frameborder="0"></iframe></li>
+
+                    <li><iframe src="https://www.boomplay.com/embed/47181809/COL" width="100%" height="600" frameborder="0"></iframe></li>
+                    <!-- <li><iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/46679079&color=%23064219&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/irfan-mirqadir-khan" title="Irfan Mirqadir Khan" target="_blank" style="color: #cccccc; text-decoration: none;">Irfan Mirqadir Khan</a> · <a href="https://soundcloud.com/irfan-mirqadir-khan/sets/pakistan-national-songs" title="Pakistan National Songs (Mili Naghmay)" target="_blank" style="color: #cccccc; text-decoration: none;">Pakistan National Songs (Mili Naghmay)</a></div></li> -->
+                    <!-- Add more songs as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Happy Pakistan's Independence Day</h2>
+        <p>Mohid~wishes everyone to be in good health and present this site for commemorating the history and achievements of Pakistan.</p>
+        <button onclick="toggleSidebar()">Mili nagme</button>
+    </div>
+</section>
+
+    
+    <!-- Placeholder for additional sections -->
+<section id="history">
+    <h2>A Glimpse into Pakistan's History</h2>
+    <div class="history-timeline">
+        <div class="history-event">
+            <div class="event-date">1947</div>
+            <div class="event-content">
+                <img src="Assets/Images/img1.png" alt="Independence of Pakistan">
+                <div class="event-description">
+                    <h3>Independence of Pakistan</h3>
+                    <p>On August 14, 1947, Pakistan was founded as an independent nation, marking the end of British rule in the subcontinent.</p>
+                </div>
+            </div>
+        </div>
+  
+
+<div class="history-event">
+    <div class="event-date">1956</div>
+    <div class="event-content">
+        <img src="Assets/Images/History/imgHistory1.jpeg" alt="First Constitution of Pakistan">
+        <div class="event-description">
+            <h3>First Constitution of Pakistan</h3>
+            <p>The first constitution of Pakistan was adopted in 1956, establishing the country as the Islamic Republic of Pakistan.</p>
+        </div>
+    </div>
+</div>
+
+<div class="history-event">
+    <div class="event-date">1971</div>
+    <div class="event-content">
+        <img src="Assets/Images/History/imgHistory1971.jpeg" alt="Separation of East Pakistan">
+        <div class="event-description">
+            <h3>Separation of East Pakistan</h3>
+            <p>In 1971, East Pakistan became Bangladesh after a brutal war of independence.</p>
+        </div>
+    </div>
+</div>
+
+<div class="history-event">
+    <div class="event-date">1988</div>
+    <div class="event-content">
+        <img src="Assets/Images/History/imgHistory1988.jpeg" alt="First Female Prime Minister">
+        <div class="event-description">
+            <h3>First Female Prime Minister</h3>
+            <p>Benazir Bhutto became the first woman to lead a Muslim-majority country as Prime Minister of Pakistan in 1988.</p>
+        </div>
+    </div>
+</div>
+
+<div class="history-event">
+    <div class="event-date">1998</div>
+    <div class="event-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMC5ttJduDS3jpBLZWvYWI3HrWJWSU1c0KLg&s" alt="Nuclear Tests">
+        <div class="event-description">
+            <h3>Nuclear Tests</h3>
+            <p>Pakistan conducted its first successful nuclear tests in 1998, becoming the seventh nuclear power in the world.</p>
+        </div>
+    </div>
+</div>
+
+<div class="history-event">
+    <div class="event-date">2011</div>
+    <div class="event-content">
+        <img src="Assets/Images/History/imgHistory2011.jpeg" alt="Death of Osama Bin Laden">
+        <div class="event-description">
+            <h3>Death of Osama Bin Laden</h3>
+            <p>On May 2, 2011, Osama Bin Laden, the mastermind behind the 9/11 attacks, was killed in Abbottabad, Pakistan by U.S. Navy SEALs.</p>
+        </div>
+    </div>
+</div>
+
+<div class="history-event">
+    <div class="event-date">2018</div>
+    <div class="event-content">
+        <img src="Assets/Images/History/imgHistory2018.jpeg" alt="Imran Khan Elected Prime Minister">
+        <div class="event-description">
+            <h3>Imran Khan Elected Prime Minister</h3>
+            <p>In 2018, Imran Khan, a former cricket star, was elected as the Prime Minister of Pakistan, leading the PTI party to victory.</p>
+        </div>
+    </div>
+</div>
+
+<div class="history-event">
+    <div class="event-date">2022</div>
+    <div class="event-content">
+        <img src="https://static.dw.com/image/61428649_605.webp" alt="Political Crisis and Imran Khan's Ouster">
+        <div class="event-description">
+            <h3>Political Crisis and Imran Khan's Ouster</h3>
+            <p>In April 2022, Imran Khan was removed from office following a no-confidence motion, leading to a significant political upheaval in the country.</p>
+        </div>
+    </div>
+</div>
+
+<div class="history-event">
+    <div class="event-date">2024</div>
+    <div class="event-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YdRF4y4xa2ZqN_bJBbCFRs-_AvodV_CWug&s" alt="General Elections 2024">
+        <div class="event-description">
+            <h3>General Elections 2024</h3>
+            <p>Pakistan held its general elections in 2024, marking a critical moment for the country's democratic processes and future governance.</p>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+<section id="dashboard">
+    <h2>Real-Time Statistics of Pakistan</h2>
+    <div class="dashboard-container">
+        <div class="stat-box">
+            <h3>Population</h3>
+            <p id="population-stat">Loading...</p>
+        </div>
+        <div class="stat-box">
+            <h3>GDP</h3>
+            <p id="gdp-stat">Loading...</p>
+        </div>
+        <div class="stat-box">
+            <h3>Literacy Rate</h3>
+            <p id="literacy-stat">Loading...</p>
+        </div>
+        <div class="stat-box">
+            <h3>Pollution Index</h3>
+            <p id="pollution-stat">Loading...</p>
+        </div>
+    </div>
+</section>
+
+    
+<section id="population">
+    <h2>Population Stats</h2>
+    <div id="map" style="height: 500px;"></div> <!-- Map container -->
+</section>
+
+
+<section id="pollution">
+    <h2>Pollution Levels</h2>
+    <div class="pollution-container">
+        <div class="pollution-image">
+            <img src="https://aaqr.org/images/article_images/2021/feature/20-10-0597.jpg" alt="Pollution Image" />
+        </div>
+        <div class="infographic">
+            <div class="pollution-bar bar1"><p>Lahore</p></div>
+            <div class="pollution-bar bar2"><p>Karachi</p></div>
+            <div class="pollution-bar bar3"><p>Islamabad</p></div>
+            <div class="pollution-bar bar4"><p>Faisalabad</p></div>
+        </div>
+    </div>
+</section>
+
+
+<section id="achievements">
+    <h2>Recent Achievements of Pakistan</h2>
+    <div class="timeline-container">
+        <div class="timeline">
+            <div class="timeline-line"></div> <!-- The line that connects the timeline points -->
+            
+            <!-- Timeline Point with Child Card -->
+            <div class="timeline-point even" data-card="card1">
+                <span>2023</span>
+                <div class="achievement-card even">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 1">
+                    <div class="card-content">
+                        <h3>Economic Growth Amidst Global Challenges (2023)</h3>
+                        <p>Despite global economic uncertainties, Pakistan managed to maintain a steady GDP growth rate...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point odd" data-card="card2">
+                <span>2022</span>
+                <div class="achievement-card odd">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 2">
+                    <div class="card-content">
+                        <h3>CPEC Phase II Initiation (2022)</h3>
+                        <p>Pakistan successfully launched the second phase of the China-Pakistan Economic Corridor (CPEC)...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point even" data-card="card3">
+                <span>2021</span>
+                <div class="achievement-card even">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 3">
+                    <div class="card-content">
+                        <h3>Climate Change Policy Implementation (2021)</h3>
+                        <p>Pakistan launched the "Ten Billion Tree Tsunami" project, receiving global recognition for its efforts...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point odd" data-card="card4">
+                <span>2020</span>
+                <div class="achievement-card odd">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 4">
+                    <div class="card-content">
+                        <h3>COVID-19 Response and Vaccination Drive (2020)</h3>
+                        <p>Pakistan effectively managed the COVID-19 pandemic through timely measures and an extensive vaccination campaign...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point even" data-card="card5">
+                <span>2019</span>
+                <div class="achievement-card even">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 5">
+                    <div class="card-content">
+                        <h3>Kartarpur Corridor Inauguration (2019)</h3>
+                        <p>The Kartarpur Corridor was inaugurated, allowing Indian Sikh pilgrims visa-free access to one of their holiest sites...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point odd" data-card="card6">
+                <span>2018</span>
+                <div class="achievement-card odd">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 6">
+                    <div class="card-content">
+                        <h3>Imran Khan's Government and Reforms (2018)</h3>
+                        <p>Imran Khan's government focused on anti-corruption measures and initiated several reforms to improve governance...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point even" data-card="card7">
+                <span>2017</span>
+                <div class="achievement-card even">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 7">
+                    <div class="card-content">
+                        <h3>First Digital Census (2017)</h3>
+                        <p>Pakistan conducted its first digital population census, providing accurate data for national planning and development...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point odd" data-card="card8">
+                <span>2016</span>
+                <div class="achievement-card odd">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 8">
+                    <div class="card-content">
+                        <h3>Launch of the National Health Program (2016)</h3>
+                        <p>The National Health Program was launched to provide health insurance to underprivileged families...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point even" data-card="card9">
+                <span>2015</span>
+                <div class="achievement-card even">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 9">
+                    <div class="card-content">
+                        <h3>Metro Bus Project Completion (2015)</h3>
+                        <p>The completion of the Metro Bus project in Lahore and Islamabad marked a significant improvement in public transport...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-point odd" data-card="card10">
+                <span>2014</span>
+                <div class="achievement-card odd">
+                    <div class="card-arrow"></div>
+                    <img src="Assets/Images/img1.png" alt="Achievement 10">
+                    <div class="card-content">
+                        <h3>Operation Zarb-e-Azb (2014)</h3>
+                        <p>Pakistan launched Operation Zarb-e-Azb, a military campaign to eliminate terrorism and insurgency in the tribal areas...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section id="beauty">
+    <h2>Pakistan's Natural Beauty</h2>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="Assets/Images/Places/hunza-valley.png" alt="Beautiful Pakistan 1" class="slide-image">
+            <div class="text">Northern Areas - Hunza Valley</div>
+        </div>
+        <div class="slide fade">
+    <img src="https://images.pexels.com/photos/4124624/pexels-photo-4124624.jpeg" alt="Beautiful Pakistan - Skardu Lake" class="slide-image">
+    <div class="text">Skardu Lake - Gilgit-Baltistan</div>
+</div>
+
+<div class="slide fade">
+    <img src="Assets/Images/Places/neelum-valley.jpg" class="slide-image">
+    <div class="text">Neelum Valley - Azad Kashmir</div>
+</div>
+
+        <div class="slide fade">
+            <img src="Assets/Images/Places/gwadar.png" alt="Beautiful Pakistan 2" class="slide-image">
+            <div class="text">Coastal Region - Gwadar</div>
+        </div>
+        <div class="slide fade">
+            <img src="Assets/Images/Places/changa-manga.png" alt="Beautiful Pakistan 3" class="slide-image">
+            <div class="text">Forest - Changa Manga</div>
+        </div>
+    </div>
+</section>
+
+
+    
+    <section id="about">
+    <h2>About Us</h2>
+    <div class="about-content">
+        <p>
+            This website is dedicated to celebrating the history, culture, and achievements of Pakistan. Our mission is to educate and inspire by showcasing the rich heritage and future prospects of the nation.
+        </p>
+        <p>
+            Founded by passionate individuals, our team strives to bring you accurate information and engaging content. Whether you're here to learn, explore, or connect, we're glad to have you.
+        </p>
+        <!-- Add more about content as needed -->
+    </div>
+</section>
+
+
+
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <form id="contact-form" action="https://formsubmit.co/amohid751@gmail.com" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="5 stars">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star">★</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        
+        <p>&copy; 2024 MOHID - Pakistan Independence Day</p>
+    </footer>
+</body>
+    
+<script src="app.js"></script>
+
+
+
+</html>
