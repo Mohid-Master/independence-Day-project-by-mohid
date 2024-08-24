@@ -3,3 +3,4 @@ it is an independence day project on 14 August created by me and chat gpt only i
 will be live on before 3 pm inshallah
 
 here the link to web page: "https://mohid-master.github.io/independence-Day-project-by-mohid/"
+and: "https://independence-day-project-by-mohid.netlify.app/"
